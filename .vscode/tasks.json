@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C++: 编译并运行",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "g++ -std=c++11 -Wall -Wextra binary_tree_exp3.cpp -o binary_tree_exp3.exe && binary_tree_exp3.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
+      "label": "C++: 仅编译",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++11",
+        "-Wall",
+        "-Wextra",
+        "binary_tree_exp3.cpp",
+        "-o",
+        "binary_tree_exp3.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
