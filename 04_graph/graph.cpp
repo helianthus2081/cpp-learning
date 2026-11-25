@@ -27,9 +27,8 @@ struct GraphData {
     vector<Edge> edges;
 };
 
-// ---------------------------------------------------------------------------
+
 // 一、邻接矩阵存储
-// ---------------------------------------------------------------------------
 class AdjMatrixGraph {
 public:
     explicit AdjMatrixGraph(const GraphData& g) : n_(g.n), directed_(g.directed) {
